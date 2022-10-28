@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Cards</title>
+  </head>
+  <body>
+ 
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img id= "logo" src="" alt="...">
+      </a>
+      <h2 id= "navbar-header">Contact Cards</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <button type="submit" id="new-contact"class="btn btn-light" height="48px">CREATE NEW CONTACT</button>
+          <button type="submit" id="installBtn"class="btn btn-light" height="48px">INSTALL</button>
+        </ul>
+      </div>
+  </nav>
+  
+  <!-- Page Content -->
+
+  <!--Toggleable Form -->
+  <section class="shadow-lg p-3 mb-5 bg-body rounded" id="formToggle">
+    <form id="contact-form">
+      <!--Name-->
+      <div class="form-group">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="ex. Joe Smith">
+        </div>
+
+      <!--Email-->
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="youremail@email.com">
+      </div>
+
+        <!--Phone-->
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone</label>
+          <input type="phone" class="form-control" id="phone" placeholder="ex. 555-555-5555">
+        </div>
+
+        <!--Radio Buttons-->
+        <div id="radio-select">
+            <div class="form-check">
+            <p>Pick profile image below:</p>
+            <input class="form-check-input" type="radio"  data-src= "Bear" name="exampleRadios"  value="Bear" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              <img id="bearThumbnail"  src="" alt="" width="60" height="60">
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" data-pic= "Dog" name="exampleRadios"  value="Dog">
+            <label class="form-check-label" for="exampleRadios2">
+              <img id="dogThumbnail" src="" alt="" width="60" height="60">
+            </label>
+          </div>
+        </div>
+     
+      <!--Form Submit Button-->
+      <button type="submit" class="btn btn-dark" id="submit-button">Submit</button>
+    </form>
+</section>
+
+<!--Card Gallery-->
+
+<section class="d-flex p-2 bd-highlight flex-wrap justify-content-evenly" id="card-gallery">
+<div class="card shadow p-3 mb-5 bg-body rounded">
+  <div class="card-header">
+    Name 
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Email</h5>
+    <h5 class="card-title">Phone</h5>
+    <button type="button" class="btn btn-dark">Edit</button>
+    <button type="button" class="btn btn-danger">Delete</button>
+  </div>
+</div>
+
+<div class="card shadow p-3 mb-5 bg-body rounded">
+  <div class="card-header">
+    Name 
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Email</h5>
+    <h5 class="card-title">Phone</h5>
+    <button type="button" class="btn btn-dark">Edit</button>
+    <button type="button" class="btn btn-danger">Delete</button>
+  </div>
+</div>
+
+<div class="card shadow p-3 mb-5 bg-body rounded">
+  <div class="card-header">
+    Name 
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Email</h5>
+    <h5 class="card-title">Phone</h5>
+    <button type="button" class="btn btn-dark">Edit</button>
+    <button type="button" class="btn btn-danger">Delete</button>
+  </div>
+</div>
+</section>
+
+  </body>
+</html>
